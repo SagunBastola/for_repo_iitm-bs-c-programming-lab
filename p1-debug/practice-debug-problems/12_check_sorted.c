@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int check_sorted(int arr, int n){
+int check_sorted(int* arr, int n){
     int is_sorted = 1;
+    
     for (int i=0; i<n; i++){ 
         if (arr[i] > arr[i+1]){ 
             is_sorted = 0;
